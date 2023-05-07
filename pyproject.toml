@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "proj"
+version = "0.1.0"
+description = "proj fastapi project"
+authors = ["baiserkeev <baha>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.75.1"
+uvicorn = "^0.17.6"
+pydantic = {extras = ["dotenv", "email"], version = "^1.9.0"}
+alembic = "^1.7.7"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+Authlib = "^1.0.1"
+itsdangerous = "^2.1.2"
+httpx = "^0.22.0"
+python-multipart = "^0.0.5"
+sqlalchemy-filters = "^0.12.0"
+aiosqlite = "^0.17.0"
+python-dateutil = "^2.8.2"
+asyncpg = "^0.25.0"
+gunicorn = "^20.1.0"
+oauth2client = "^4.1.3"
+greenlet = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
